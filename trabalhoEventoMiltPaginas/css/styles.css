@@ -1,40 +1,94 @@
+/* Estilos Gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Estilos do Cabeçalho */
 header {
-    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #231106; /* Cor de fundo do cabeçalho */
+    padding: 20px;
     color: white;
-    padding: 15px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+    
+}
+
+.logo {
+    width: 50px; /* Largura da logo */
+    height: auto;
+    margin-right: 15px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+nav li {
+    margin: 0 10px;
 }
 
-nav ul li a {
-    color: white;
+nav a {
     text-decoration: none;
+    color: white; /* Cor do texto do menu */
 }
 
-footer {
-    background-color: #333;
-    color: white;
+nav a:hover {
+    text-decoration: underline; /* Efeito hover para os links */
+}
+
+/* Estilos do Corpo Principal */
+main {
     text-align: center;
-    padding: 1px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
+/* Estilos do Banner */
+.banner {
+    background-image: url('caminho/para/sua/imagem-de-fundo.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobre toda a área */
+    background-position: center; /* Centraliza a imagem */
+    height: 300px; /* Altura do banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Cor do texto das datas */
+}
+
+.event-dates {
+    background-color: rgba(35, 17, 6, 0.9); /* Fundo semi-transparente para o texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Estilos da Logo do Evento */
+.logo-container {
+    margin: 20px 0;
+}
+
+.event-logo {
+    width: 800px; /* Ajuste o tamanho da logo do evento */
+    height: auto;
+}
+
+/* Estilos da Descrição do Evento */
+.event-description {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+/* Estilos da Tabela */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -64,62 +118,7 @@ td {
     vertical-align: top;
 }
 
-h2, p {
-    text-align: center;
-}
-
-.contact-section {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 1000px;
-}
-
-.contact-info, .contact-form, .map {
-    width: 30%;
-    padding: 15px;
-}
-
-/* Ajuste de responsividade */
-@media (max-width: 768px) {
-    .contact-info, .contact-form, .map {
-        width: 100%;
-    }
-}
-
-/* Formulário de contato */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input, textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-.map img {
-    max-width: 100%;
-    border: 1px solid #ddd;
-}
-
-/* Estilos da seção de artistas */
+/* Estilos da Seção de Artistas */
 .artist-section {
     display: flex;
     flex-wrap: wrap;
@@ -160,6 +159,25 @@ input[type="submit"]:hover {
     }
 
     .artist img {
-        height: 150px; /* Ajuste a altura para dispositivos menores, se necessário */
+        height: 150px; /* Ajuste a altura para dispositivos menores */
     }
+
+    .contact-info, .contact-form, .map {
+        width: 100%; /* Ajuste para telas menores */
+    }
+
+    .event-logo {
+        width: 100%; /* Ajuste o tamanho da logo do evento */
+    }
+}
+
+/* Estilos do Rodapé */
+footer {
+    background-color: #150505;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
