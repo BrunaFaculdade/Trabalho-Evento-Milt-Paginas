@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Arena Country</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Inscrição para o Arena Country</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Preencha o formulário para participar do Arena Country</h2>
+            <form action="submit_form.php" method="POST">
+                <!-- Campo Nome -->
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                
+                <!-- Campo Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                 <!-- Campo Sexo -->
+                 <label for="sexo">Sexo:</label>
+                 <select id="sexo" name="sexo" required>
+                     <option value="">Selecione</option>
+                     <option value="feminino">Feminino</option>
+                     <option value="masculino">Masculino</option>
+                     <option value="outro">Outro</option>
+                     <option value="nao_dizer">Prefiro não dizer</option>
+                 </select><br><br>
+                
+                <!-- Campo Telefone -->
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" placeholder="Digite seu telefone com DDD" required><br><br>
+
+                <!-- Opções de inscrição -->
+                <label for="tipo_inscricao">Tipo de Inscrição:</label><br>
+                <input type="radio" id="competir" name="tipo_inscricao" value="competir" required>
+                <label for="competir">Competir</label><br>
+                <input type="radio" id="assistir" name="tipo_inscricao" value="assistir" required>
+                <label for="assistir">Apenas assistir</label><br><br>
+
+                <!-- Botão de envio -->
+                <input type="submit" value="Enviar Inscrição">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Arena Country Brasil</p>
+    </footer>
+</body>
+</html>
