@@ -1,1 +1,64 @@
- 
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena Country - Contato</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Contato - Arena Country</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <!-- Informações de Contato -->
+            <div class="contact-info">
+                <h2>Informações de Contato</h2>
+                <p><strong>Organizador:</strong> Bruna Stangherlin</p>
+                <p><strong>Email:</strong> arenacountry@gmail.com</p>
+                <p><strong>Telefone:</strong> (46) 99999-9999</p>
+                <p><strong>Endereço:</strong> R. Benjamin Borges dos Santos, 600 - Fraron, Pato Branco - PR, 85503-350</p>
+            </div>
+
+            <!-- Mapa do Local -->
+            <div class="map">
+                <h2>Local do Evento</h2>
+                <img src="imagens\mapaLocalEvento.png" alt="Mapa do local do Evento">
+            </div>
+
+            <!-- Formulário de Contato -->
+            <div class="contact-form">
+                <h2>Envie uma Mensagem</h2>
+                <form action="envia-contato.php" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+                    <input type="submit" value="Enviar Mensagem">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arena Country Brasil</p>
+    </footer>
+</body>
+</html>
